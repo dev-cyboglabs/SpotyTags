@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "SpotyTags Staff",
+    "slug": "SpotyTags-staff-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "spotytags",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0A0A0A",
+    "splash": {
+      "backgroundColor": "#0A0A0A",
+      "resizeMode": "contain",
+      "image": "./assets/splash-icon.png"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.spotytags.staff",
+      "infoPlist": {
+        "NSCameraUsageDescription": "SpotyTags uses the camera to scan minibar tag QR codes."
+      }
+    },
+    "android": {
+      "package": "com.spotytags.staff",
+      "usesCleartextTraffic": true,
+      "adaptiveIcon": {
+        "backgroundColor": "#0A0A0A",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "permissions": [
+        "CAMERA"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "placeholder-id"
+      }
+    },
+    "plugins": [
+      "./with-cleartext-traffic",
+      "expo-notifications",
+      "expo-secure-store",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "SpotyTags uses the camera to scan minibar tag QR codes."
+        }
+      ],
+      "expo-asset"
+    ]
+  }
+}
