@@ -19,3 +19,25 @@ python -c "import secrets; print('LICENSE_HMAC_KEY=' + secrets.token_hex(32))"
 # Run Build
 cd Mobile-App
 npx eas build -p android --profile preview
+
+
+
+MONGO_URL=mongodb://localhost:27017
+DB_NAME=spotytags
+UPLOADS_DIR=./uploads
+SEED_DEMO_DATA=false
+CORS_ORIGINS=*
+JWT_SECRET=spotytags-secret-key-change-in-production
+
+# ── License security ──────────────────────────────────────────────────────────
+# 32-byte keys encoded as base64.  Generate with:
+#   python -c "import secrets,base64; print(base64.b64encode(secrets.token_bytes(32)).decode())"
+# If unset, keys are derived from JWT_SECRET (acceptable for dev; set in production).
+LICENSE_ENCRYPTION_KEY=b6e686d672e439178bcb00b37dc95347cd04764dbf70dad02fa84f11d8803bd7
+LICENSE_HMAC_KEY=3e0179eab49b5359033fe7a87fc01bc78b4e2da4fb19a0416f7ac700595c56bd
+
+# Optional: override where .last_run timestamp file is written (default: backend dir).
+# LAST_RUN_DIR=/var/lib/spotytags
+ADMIN_API_KEY=3fQXPka9qGwdxuF-HKJUQYEvNk23zg0x_nc7-21JwXY
+# ADMIN_SCRIPT_PASSWORD=admin  # For dev convenience (no password prompt)
+ADMIN_PASSWORD_HASH=8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
