@@ -1,0 +1,118 @@
+{
+  "theme_and_archetype": {
+    "domain": "Hospitality / Hotel SaaS",
+    "theme": "Light",
+    "archetype": "Jewel & Luxury / Old-World Hotel",
+    "description": "Editorial, magazine-like layout inspired by Cabana Magazine and luxury hotel systems. Avoids standard B2B SaaS tropes. Uses warm cream, deep ink, and espresso with restrained coral brand moments."
+  },
+  "type_system": {
+    "heading_font": {
+      "name": "Fraunces",
+      "import_url": "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600&display=swap",
+      "usage": "H1, H2, large metric numbers, brand moments."
+    },
+    "body_font": {
+      "name": "Geist",
+      "import_url": "https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&display=swap",
+      "usage": "Body text, UI elements, data tables, labels."
+    },
+    "rules": [
+      "H1 (Hero): text-5xl to text-6xl, tracking-tight, Fraunces.",
+      "Metrics: Oversized numbers in Fraunces, often italicized for secondary stats.",
+      "Labels: Small caps, uppercase, tracking-[0.2em], text-xs, Geist.",
+      "No generic 'Manrope' or 'Inter'. Strict adherence to the Serif + Sans pairing."
+    ]
+  },
+  "color_palette": {
+    "base": {
+      "background": "#F7F5F0",
+      "surface": "#FFFFFF",
+      "surface_alt": "#EFECE5"
+    },
+    "text": {
+      "primary": "#1A1A1A",
+      "secondary": "#5C5C5C",
+      "muted": "#8A857D"
+    },
+    "brand": {
+      "coral": "#FF7E6B",
+      "coral_muted": "#FF7E6B33"
+    },
+    "accents": {
+      "espresso": "#3E2723",
+      "oxblood": "#8B0000",
+      "border": "#E5E0D8",
+      "border_dark": "#D1C9BB"
+    },
+    "status": {
+      "success": "#2E5C3D",
+      "warning": "#B8860B",
+      "error": "#8B0000",
+      "offline": "#5C5C5C"
+    }
+  },
+  "layout_philosophy": {
+    "structure": "Editorial layout replacing generic sidebar+topbar. Uses a sticky vertical text 'rail' on the left with no chrome. Top-aligned compact navigation with category labels rendered in Fraunces. Document-like structure with 1px Espresso/Ink section dividers.",
+    "spacing": "Generous. p-8 to p-16 for main sections. Intentional whitespace to let data breathe.",
+    "borders": "No rounded-2xl cards. Use sharp edges or max rounded-sm. Separate content using 1px solid borders (#E5E0D8) instead of drop shadows.",
+    "shadows": "BANNED: Soft blurry drop shadows. ALLOWED: 1px hard shadows or pure flat design."
+  },
+  "data_display_patterns": {
+    "metrics": "Oversized number with hairline divider + small caps label below. Numbers rendered in Fraunces.",
+    "tables": "No outer borders. Just whitespace, ticking numerals, and 1px bottom border for rows. Minimalist.",
+    "status": "Colored hairline beside number or text, NOT pill badges. Example: inline text 'Active' with a 4px coral dot.",
+    "inline_data": "Inline data in flowing paragraph format (e.g., 'Room 204 has 3 pending bills')."
+  },
+  "motion_and_texture": {
+    "texture": "Subtle film grain texture overlay on the background using a fixed SVG noise pattern (opacity 2-4%).",
+    "motion": [
+      "Hairline expansions on hover (0 to 100% width).",
+      "Text reveals (clip-path animation for headings).",
+      "Gentle parallax on hero/login imagery.",
+      "NO generic 'card hover translate-y-0.5'."
+    ]
+  },
+  "components": {
+    "buttons": "Flat, sharp edges. Primary: Ink background, Cream text. Brand CTA: Coral background, Ink text. Hover: Solid invert or subtle opacity shift.",
+    "cards": "Remove Shadcn defaults. Cards are flat rectangles with 1px border (#E5E0D8), no shadow, sharp corners.",
+    "inputs": "Flushed inputs. Only bottom border visible. Label floats above in small caps.",
+    "dialogs": "Full-page side sheet with editorial spacing OR centered modal with a vertical hairline accent + serif heading. No standard shadow popups."
+  },
+  "page_by_page_direction": {
+    "login": "Edge-to-edge dim moody hotel suite photo. Form floats in a sharp, small inset block (solid Cream) positioned asymmetrically (e.g., bottom right).",
+    "dashboard": "Editorial header. Primary metric (Today's Revenue) in huge Fraunces display type. Secondary metrics as a horizontal scroll strip. Status moments as flowing inline text. Recent Activity as a minimalist timeline.",
+    "rooms": "Numbered list-table hybrid. Room number in massive Fraunces text on the left, details tight on the right. No card grid.",
+    "tag_inventory": "Data table with no vertical borders. Status shown as a colored hairline indicator on the left of the row.",
+    "gateways": "Document layout. Gateway name in serif, status as small caps. API key hidden behind a text scramble effect interaction.",
+    "product_catalog": "Magazine grid. Asymmetrical. Image-led with hairline below the image, title in serif, price in sans. No enclosing boxes.",
+    "billing": "Invoice/document feel. Strict grid lines, ink color, small caps headings. Looks like a printed receipt or elegant ledger.",
+    "housekeeping": "Numbered rooms in large serif. Restock alerts rendered as coral text (not pill badges).",
+    "reports": "Minimalist charts. No axis lines or grids. Just the data line/bars with sharp tooltips.",
+    "users": "Minimal list. Role displayed as small caps inline text.",
+    "license": "Document style. Plans are columns separated by 1px hairlines. No 'highlight' card popping out with shadows.",
+    "settings": "Clean, document-like form. Input fields with only bottom borders.",
+    "audit_log": "Left-aligned thin line, time in sans-serif, event description in elegant serif.",
+    "mobile_pwa": "Confident, edge-to-edge images. Bottom nav uses thin, elegant icons. Solid blocks of color, no 'floating white cards'."
+  },
+  "media": {
+    "logos": {
+      "light_bg": "https://customer-assets.emergentagent.com/job_402fa477-ef04-4cab-a5f1-ee3aace5b11c/artifacts/50m98wyg_white%20with%20bg.png",
+      "dark_bg": "https://customer-assets.emergentagent.com/job_402fa477-ef04-4cab-a5f1-ee3aace5b11c/artifacts/rjm2hubl_black%20with%20bg.png"
+    },
+    "images": {
+      "login_bg": "https://images.pexels.com/photos/10343928/pexels-photo-10343928.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "dashboard_hero": "https://images.unsplash.com/photo-1758931156918-b1671900a864?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzV8MHwxfHNlYXJjaHwyfHxsdXh1cnklMjBob3RlbCUyMGxvYmJ5JTIwZGltfGVufDB8fHx8MTc3OTIwODUyMXww&ixlib=rb-4.1.0&q=85",
+      "catalog_drinks": "https://images.pexels.com/photos/32187603/pexels-photo-32187603.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "misc_mood": "https://images.pexels.com/photos/29870245/pexels-photo-29870245.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Load 'Fraunces' and 'Geist' fonts.",
+    "Apply grain texture globally as a fixed background div with pointer-events-none.",
+    "Build the sticky vertical text rail on the left for branding/navigation.",
+    "Completely strip Shadcn components of rounded borders and soft shadows. Override to rounded-none or rounded-sm, flat borders, no shadows.",
+    "Implement the split-screen login with the provided login_bg image.",
+    "Do NOT use standard KPI cards; build the oversized metric + hairline divider component.",
+    "Ensure the coral color (#FF7E6B) is used very selectively for primary calls to action or brand moments."
+  ]
+}

@@ -1,0 +1,6 @@
+/* SpotyTags – editorial reset (keep minimal) */
+.App {
+    min-height: 100vh;
+    background-color: #F7F5F0;
+    color: #1A1A1A;
+}
